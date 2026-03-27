@@ -80,12 +80,37 @@ grep "POST" access.log
 
 ---
 
+## 📄 Sample Log Evidence
+
+Example suspicious log entry:
+
+
+192.168.1.10 - - [12/Oct/2023:10:15:32] "POST /login HTTP/1.1" 401 -
+
+- HTTP 401 indicates failed authentication
+- Repeated POST requests suggest brute-force attempts
+
+---
+
 ## 🚨 Key Findings
 
 * Suspicious IPs interacting repeatedly with the system
 * Evidence of brute-force login attempts
 * Unusual web requests indicating probing or enumeration
 * Potential unauthorized access attempts
+
+---
+
+## 🧠 Attack Scenario Reconstruction
+
+Based on the log analysis:
+
+1. Attacker targeted the login endpoint using POST requests
+2. Multiple failed login attempts were observed
+3. Activity indicates a brute-force attack attempt
+4. No successful authentication detected, but persistent probing observed
+
+This behavior aligns with common brute-force attack patterns.
 
 ---
 
