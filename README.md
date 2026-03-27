@@ -129,6 +129,11 @@ Log analysis is essential for:
 
 ---
 
+## 🔗 Detailed Analysis
+For deeper log analysis, see: [logs-analysis.md](logs-analysis.md)
+
+---
+
 ## ✅ Conclusion
 
 This project demonstrates foundational SOC-level skills in log analysis, threat detection, and incident investigation. It highlights the importance of logs in understanding and responding to cybersecurity incidents.
